@@ -14,7 +14,10 @@ const ecoRoutes = require('./routes/eco');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://final-year-project-ecocreds-frontend.onrender.com",
+  credentials: true
+}));
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
