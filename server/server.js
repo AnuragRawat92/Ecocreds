@@ -15,7 +15,7 @@ const ecoRoutes = require('./routes/eco');
 const app = express();
 
 app.use(cors({
-  origin: "https://vercel.com/anurag-rawats-projects-5cda1f54/ecocreds/D1e9n9m2i1NaqzWWysP845fb72Pq",
+  origin: "https://ecocreds-git-main-anurag-rawats-projects-5cda1f54.vercel.app/",
   credentials: true
 }));
 app.use(express.json());
